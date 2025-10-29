@@ -1,0 +1,16 @@
+# Archivos de Sketch de Arduino
+*.o
+*.elf
+*.bin
+*.hex
+*.lss
+*.eep
+
+# Directorios temporales y de compilación
+/build/
+/cache/
+/tmp/
+
+# Archivos de sistemas operativos (macOS, Windows, Linux)
+.DS_Store
+Thumbs.db
