@@ -149,7 +149,7 @@ void mostrarGas() {
   lcd.setCursor(0, 0);
   lcd.print(F("Gas: ")); lcd.print(gas);
   lcd.setCursor(0, 1);
-  if (gas > 400) lcd.print(F("⚠ Gas detectado!"));
+  if (gas > 400) lcd.print(F("Gas detectado"));
   else lcd.print(F("Nivel normal"));
 }
 
