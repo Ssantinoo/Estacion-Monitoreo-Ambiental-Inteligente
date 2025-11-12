@@ -214,13 +214,14 @@ void guardarDatosYEnviar() {
   }
 
   // === Enviar por Bluetooth ===
-  BT.print(F("[")); BT.print(timestamp); BT.println(F("]"));
-  BT.print(F("Temp: ")); BT.print(t, 1); BT.print(F("°C | "));
-  BT.print(F("Hum: ")); BT.print(h, 1); BT.print(F("% | "));
-  BT.print(F("Luz: ")); BT.print(luz); BT.print(F(" | "));
-  BT.print(F("Gas: ")); BT.print(gas); BT.print(F(" | "));
-  BT.print(F("Sonido: ")); BT.println(sonido);
-  BT.println(F("-----------------------------------"));
+  BT.print("["); BT.print(timestamp); BT.println("]");
+  BT.print(t, 1); BT.println("°C");
+  BT.print(h, 1); BT.println("%");
+  BT.println(luz);
+  BT.println(gas);
+  BT.println(sonido);
+  BT.println("------------------------------");
+
 
   // === También imprimir en Serial Monitor ===
   Serial.print(F("[")); Serial.print(timestamp); Serial.println(F("]"));
